@@ -1,0 +1,33 @@
+﻿@model Vidly.ViewModels.RandomMovieViewModel
+@{
+	ViewBag.Title = "Movies database";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Movies list</h2>
+
+<table class="table table-striped table-hover ">
+	<thead>
+		<tr>
+			<th>
+				Movie
+			</th>
+			<th>
+				Description
+			</th>
+			<th>
+				Rating
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model.Movie)
+		{
+			<tr>
+				<td>@Html.ActionLink(item.Name, "", "Movies/" + item.Id) </td>
+				<td>@Html.ActionLink(item.Description, "", "Movies/" + item.Id)</td>
+				<td>@Html.ActionLink(item.Rating.ToString(), "", "Movies/" + item.Id)</td>
+			</tr>
+		}
+	</tbody>
+</table>
