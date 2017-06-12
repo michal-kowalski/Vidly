@@ -1,8 +1,12 @@
 ﻿
-@{
+@model Vidly.ViewModels.RandomMovieViewModel
+@{  
 	ViewBag.Title = "MoviesDetails";
 	Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>MoviesDetails</h2>
+<h1>@Model.OneMovie.Name</h1>
+<h2>@Model.OneMovie.Description</h2>
+
+<p>Score: @Model.OneMovie.Rating</p>
 

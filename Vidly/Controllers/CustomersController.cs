@@ -48,7 +48,7 @@ namespace Vidly.Controllers
 			if (customer == null)
 				return HttpNotFound();
 
-			var customers = new Customer();
+			//var customers = new Customer();
 
 			var ViewModel = new RandomMovieViewModel
 			{
