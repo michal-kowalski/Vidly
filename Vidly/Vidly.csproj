@@ -228,9 +228,34 @@
     <Compile Include="Migrations\201706131903031_PopulateColumnNameForMembershipType.Designer.cs">
       <DependentUpon>201706131903031_PopulateColumnNameForMembershipType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706131923547_AddBirthdayToCustomerTable.cs" />
+    <Compile Include="Migrations\201706131923547_AddBirthdayToCustomerTable.Designer.cs">
+      <DependentUpon>201706131923547_AddBirthdayToCustomerTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706131941227_AddBirthdayToCustomerTable1.cs" />
+    <Compile Include="Migrations\201706131941227_AddBirthdayToCustomerTable1.Designer.cs">
+      <DependentUpon>201706131941227_AddBirthdayToCustomerTable1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706132106542_AddedGenresTable.cs" />
+    <Compile Include="Migrations\201706132106542_AddedGenresTable.Designer.cs">
+      <DependentUpon>201706132106542_AddedGenresTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706132133234_AddedGenresTableSecondAttemp.cs" />
+    <Compile Include="Migrations\201706132133234_AddedGenresTableSecondAttemp.Designer.cs">
+      <DependentUpon>201706132133234_AddedGenresTableSecondAttemp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706132214335_AddedGenresTableSecondAttemp1.cs" />
+    <Compile Include="Migrations\201706132214335_AddedGenresTableSecondAttemp1.Designer.cs">
+      <DependentUpon>201706132214335_AddedGenresTableSecondAttemp1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706132220107_PopulateGenres.cs" />
+    <Compile Include="Migrations\201706132220107_PopulateGenres.Designer.cs">
+      <DependentUpon>201706132220107_PopulateGenres.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -346,6 +371,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706131903031_PopulateColumnNameForMembershipType.resx">
       <DependentUpon>201706131903031_PopulateColumnNameForMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706131923547_AddBirthdayToCustomerTable.resx">
+      <DependentUpon>201706131923547_AddBirthdayToCustomerTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706131941227_AddBirthdayToCustomerTable1.resx">
+      <DependentUpon>201706131941227_AddBirthdayToCustomerTable1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706132106542_AddedGenresTable.resx">
+      <DependentUpon>201706132106542_AddedGenresTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706132133234_AddedGenresTableSecondAttemp.resx">
+      <DependentUpon>201706132133234_AddedGenresTableSecondAttemp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706132214335_AddedGenresTableSecondAttemp1.resx">
+      <DependentUpon>201706132214335_AddedGenresTableSecondAttemp1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706132220107_PopulateGenres.resx">
+      <DependentUpon>201706132220107_PopulateGenres.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

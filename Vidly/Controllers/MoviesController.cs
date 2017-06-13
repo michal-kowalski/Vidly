@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Vidly.Models;
+using System.Data.Entity;
 using Vidly.ViewModels;
 
 namespace Vidly.Controllers
@@ -19,8 +20,10 @@ namespace Vidly.Controllers
         // GET: Movies
         public ActionResult Index()
 		{
-            var movies = _context.Movies.ToList();
-			/*var movies = new List<Movie>
+            var movies = _context.Movies.Include(c=>c.Genre).ToList();
+            if (movies == null)
+                return HttpNotFound();
+            /*var movies = new List<Movie>
 			{
 				new Movie { Name = "Matrix", Id = 0, Description = "weqeqeq", Rating = 5.0 },
 				new Movie { Name = "Matrix 2", Id = 1, Description = "weqeqeq", Rating = 4.5 },
@@ -29,7 +32,7 @@ namespace Vidly.Controllers
 			};*/
 
 
-			var viewModel = new RandomMovieViewModel
+            var viewModel = new RandomMovieViewModel
 			{
 				Movie = movies
 			};
@@ -71,7 +74,7 @@ namespace Vidly.Controllers
 
 		public ActionResult MoviesDetails(int id)
 		{
-            var movie = _context.Movies.SingleOrDefault(c => c.Id == id);
+            var movie = _context.Movies.Include(c=>c.Genre).SingleOrDefault(c => c.Id == id);
             var viewModel = new RandomMovieViewModel
             {
                 OneMovie = movie

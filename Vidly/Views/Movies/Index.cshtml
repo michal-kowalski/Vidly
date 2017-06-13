@@ -24,6 +24,9 @@ else
 			    <th>
 				    Description
 			    </th>
+                <th>
+                    Genre
+                </th>
 			    <th>
 				    Rating
 			    </th>
@@ -35,6 +38,7 @@ else
 			    <tr>
 				    <td>@Html.ActionLink(item.Name, "", "Movies/" + item.Id) </td>
 				    <td>@Html.ActionLink(item.Description, "", "Movies/" + item.Id)</td>
+                    <td>@Html.ActionLink(item.Genre.Name, "", "Movies/" + item.Id)</td>
 				    <td>@Html.ActionLink(item.Rating.ToString(), "", "Movies/" + item.Id)</td>
 			    </tr>
             }

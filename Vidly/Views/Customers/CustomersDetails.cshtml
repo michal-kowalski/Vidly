@@ -9,3 +9,11 @@
 <h3>@Model.Customer.Name</h3>
 <p>@Model.Customer.Description</p>
 
+<ul>
+    <li>Membership type: @Model.Customer.MembershipType.Name</li>
+    @if (Model.Customer.BirthDate.HasValue)
+    {
+    <li>Birth date: @Model.Customer.BirthDate.Value.ToString("dd-MM-yyyy")</li>
+    }
+</ul>
+
