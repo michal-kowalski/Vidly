@@ -220,6 +220,14 @@
     <Compile Include="Migrations\201706122022365_MoviesMigration.Designer.cs">
       <DependentUpon>201706122022365_MoviesMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706131856476_SettingNameForMembershipType.cs" />
+    <Compile Include="Migrations\201706131856476_SettingNameForMembershipType.Designer.cs">
+      <DependentUpon>201706131856476_SettingNameForMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706131903031_PopulateColumnNameForMembershipType.cs" />
+    <Compile Include="Migrations\201706131903031_PopulateColumnNameForMembershipType.Designer.cs">
+      <DependentUpon>201706131903031_PopulateColumnNameForMembershipType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -332,6 +340,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706122022365_MoviesMigration.resx">
       <DependentUpon>201706122022365_MoviesMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706131856476_SettingNameForMembershipType.resx">
+      <DependentUpon>201706131856476_SettingNameForMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706131903031_PopulateColumnNameForMembershipType.resx">
+      <DependentUpon>201706131903031_PopulateColumnNameForMembershipType.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
