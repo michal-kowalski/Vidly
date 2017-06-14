@@ -7,6 +7,14 @@
 
 <h1>@Model.OneMovie.Name</h1>
 <h2>@Model.OneMovie.Description</h2>
-
 <p>Score: @Model.OneMovie.Rating</p>
+
+<ul>
+	<li>Genre: @Model.OneMovie.Genre.Name</li>
+	<li>Release Date: @Model.OneMovie.ReleaseDate.ToShortDateString()</li>
+	<li>Date Added: @Model.OneMovie.DateAdded.ToShortDateString()</li>
+	<li>Number in Stock: @Model.OneMovie.NumberInStock</li>
+</ul>
+
+
 
