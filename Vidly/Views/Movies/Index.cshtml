@@ -36,10 +36,10 @@ else
 		    @foreach (var item in Model.Movie)
             {
 			    <tr>
-				    <td>@Html.ActionLink(item.Name, "", "Movies/" + item.Id) </td>
-				    <td>@Html.ActionLink(item.Description, "", "Movies/" + item.Id)</td>
-                    <td>@Html.ActionLink(item.Genre.Name, "", "Movies/" + item.Id)</td>
-				    <td>@Html.ActionLink(item.Rating.ToString(), "", "Movies/" + item.Id)</td>
+				    <td>@Html.ActionLink(item.Name, "", "Movies/MoviesDetails/" + item.Id) </td>
+				    <td>@Html.ActionLink(item.Description, "", "Movies/MoviesDetails/" + item.Id)</td>
+                    <td>@Html.ActionLink(item.Genre.Name, "", "Movies/MoviesDetails/" + item.Id)</td>
+				    <td>@Html.ActionLink(item.Rating.ToString(), "", "Movies/MoviesDetails/" + item.Id)</td>
 			    </tr>
             }
 	    </tbody>
