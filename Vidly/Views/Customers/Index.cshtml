@@ -22,22 +22,22 @@ else
 				<th>
 					Customer
 				</th>
-                <th>
-                    Discount rate
-                </th>
-                <th>
-                    Discount Type
-                </th>
+				<th>
+					Discount rate
+				</th>
+				<th>
+					Discount Type
+				</th>
 			</tr>
 		</thead>
 		<tbody>
 			@foreach (var item in Model.Customers)
 			{
 				<tr>
-                    <td>@Html.ActionLink(@item.Name, "", "Customers/CustomersDetails/" + @item.Id)</td>
-                    <td>@item.MembershipType.DiscountRate%</td>
-                    <td>@item.MembershipType.Name</td>
-                </tr>
+					<td>@Html.ActionLink(@item.Name, "", "Customers/CustomersDetails/" + @item.Id)</td>
+					<td>@item.MembershipType.DiscountRate%</td>
+					<td>@item.MembershipType.Name</td>
+				</tr>
 			}
 
 		</tbody>
