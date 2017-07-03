@@ -34,7 +34,7 @@ else
 			@foreach (var item in Model.Customers)
 			{
 				<tr>
-					<td>@Html.ActionLink(@item.Name, "", "Customers/CustomersDetails/" + @item.Id)</td>
+					<td>@Html.ActionLink(@item.Name, "Edit/" + item.Id)</td>
 					<td>@item.MembershipType.DiscountRate%</td>
 					<td>@item.MembershipType.Name</td>
 				</tr>
